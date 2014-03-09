@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{E28C28FE-3B89-11D3-89F5-0000E8C7E630} = s 'Pantti'
+		'Pantti.EXE'
+		{
+			val AppID = s {E28C28FE-3B89-11D3-89F5-0000E8C7E630}
+		}
+	}
+}

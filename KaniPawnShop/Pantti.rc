@@ -1,0 +1,1925 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "gxresrc.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Pantti.ico"
+IDR_PANTTITYPE          ICON    DISCARDABLE     "res\\PanttiDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_LAINAT_UUSILAINA
+    BUTTON      ID_LAINAT_TULOSTAKUITITSUORITJONONTAP
+    SEPARATOR
+    BUTTON      ID_LAINAT_LUNASTUS
+    BUTTON      ID_LAINAT_UUDISTUS
+    BUTTON      ID_LAINAT_VAKUUSMUUTOS
+    SEPARATOR
+    BUTTON      ID_HUUTOKAUPPA_HUUTOKAUPPA
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "A&setukset"
+    BEGIN
+        MENUITEM "&Tuotteet",                   ID_HALLINTA_TUOTTEET
+        MENUITEM "&Kassat",                     ID_HALLINTA_KASSAT
+        MENUITEM "Kassan &saldo",               ID_HALLINTA_KASSANSALDO
+        MENUITEM "&Arviomiehet",                ID_HALLINTA_ARVIOMIEHET
+        MENUITEM "Asiakkaat",                   ID_HALLINTA_ASIAKKAAT
+        MENUITEM "As&etukset",                  ID_HALLINTA_ASETUKSET
+        MENUITEM SEPARATOR
+        MENUITEM "TyhjennäRuutu\tF12",          ID_ASETUKSET_TYHJENNRUUTU
+        MENUITEM SEPARATOR
+        MENUITEM "Lopetus &x",                  ID_APP_EXIT
+    END
+    POPUP "&Asiakkaat"
+    BEGIN
+        MENUITEM "Etsi &asiakas\tF3",           ID_ETSI_ETSIASIAKAS
+        MENUITEM "&Tyhjennä asiakastied.\tCtrl+Del", 
+                                                ID_ETSI_TYHJENNASIAKASTIED
+        MENUITEM "Talleta &uusi asiakas\tCtrl+S", 
+                                                ID_ASIAKKAAT_TALLETAUUSIASIAKAS
+
+        MENUITEM "Talleta muuttuneet asiakastiedot", 
+                                                ID_ASIAKKAAT_TALLETAMUUTTUNEETASIAKASTIEDOT
+
+        MENUITEM "Henk.tunnus\tF1",             ID_ASIAKKAAT_HENKTUNNUS
+        MENUITEM "Osoite\tF11",                 ID_ASIAKKAAT_OSOITE
+    END
+    POPUP "&Lainat"
+    BEGIN
+        MENUITEM "Tulosta &kuitit suorit.jonon tap.\tF2", 
+                                                ID_LAINAT_TULOSTAKUITITSUORITJONONTAP
+
+        MENUITEM "&Etsi laina\tF4",             ID_ETSI_ETSILAINA
+        MENUITEM SEPARATOR
+        MENUITEM "&Uusi laina\tF5",             ID_LAINAT_UUSILAINA
+        MENUITEM "&Lunastus\tF6",               ID_LAINAT_LUNASTUS
+        MENUITEM "Uu&distus\tF7",               ID_LAINAT_UUDISTUS
+        MENUITEM "Vakuus&muutos\tF8",           ID_LAINAT_VAKUUSMUUTOS
+        MENUITEM SEPARATOR
+        MENUITEM "Haltijan muutos",             ID_LAINAT_HALTIJANMUUTOS
+        MENUITEM "Laina luottotappioihin",      ID_LAINAT_LAINALUOTTOTAPPIOIHIN
+
+        MENUITEM "Tapahtuman mitätöinti",       ID_LAINAT_LAINANMITTINTI
+        MENUITEM "Lainan siirto huutokauppaan", ID_HUUTOKAUPPA_LAINANSIIRTOHUUTOKAUPPAAN
+
+        MENUITEM SEPARATOR
+        MENUITEM "L&ainan kulut\tF9",           ID_LAINAT_LAINANKULUT
+        MENUITEM "&Tapahtumat\tF10",            ID_LAINAT_LAINANTAPAHTUMAT
+    END
+    POPUP "&Raportit"
+    BEGIN
+        MENUITEM "Kassa&loki",                  ID_RAPORTIT_KASSALOKI
+        MENUITEM "&Kassapäiväkirja",            ID_RAPORTIT_KASSAPIVKIRJA
+        MENUITEM "&Odotuslista",                ID_RAPORTIT_ODOTUSLISTA
+        MENUITEM SEPARATOR
+        MENUITEM "&Muistutuskirjelista",        ID_RAPORTIT_MUISTUTUSKIRJEET
+        MENUITEM "Kirje&1",                     ID_RAPORTIT_KIRJE1
+        MENUITEM "Kirje&2",                     ID_RAPORTIT_KIRJE2
+        MENUITEM SEPARATOR
+        MENUITEM "&Uusi kuitti",                ID_RAPORTIT_UUSIKUITTI
+    END
+    POPUP "&Huutokauppa"
+    BEGIN
+        MENUITEM "Hakulista",                   ID_HUUTOKAUPPA_HAKULISTA
+        MENUITEM "Huutokauppasiirto",           ID_HUUTOKAUPPA_SIIRTOHUUTOKAUPPAAN
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Huutokauppa",                ID_HUUTOKAUPPA_HUUTOKAUPPA
+        MENUITEM SEPARATOR
+        MENUITEM "Ylijäämäkirjeet",             ID_HUUTOKAUPPA_YLIJMKIRJEET
+        MENUITEM "Ylijäämän maksu asiakkaalle", ID_HUUTOKAUPPA_YLIJMNKUITTAUSASIAKKAALLE
+
+        MENUITEM "Ylijäämän kuitt. lainaamolle", 
+                                                ID_HUUTOKAUPPA_YLIJMNKUITTLAINAAMOLLE
+
+        MENUITEM "Alle vuoden vanhat ylijäämät", 
+                                                ID_HUUTOKAUPPA_ALLEVUODENVANHATYLIJMT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Vapaaeht. alij. periminen asiakkaalta", 
+                                                ID_HUUTOKAUPPA_VAPAAEHTALIJPERIMINENASIAKKAALTA
+
+    END
+    POPUP "&Näytä"
+    BEGIN
+        MENUITEM "&Painikerivi",                ID_VIEW_TOOLBAR
+        MENUITEM "&Ohjerivi",                   ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Ohje"
+    BEGIN
+        MENUITEM "&Käyttöopas",                 ID_OHJE_TIETOJA
+        MENUITEM "&Tietoja ohjelmaversiosta",   ID_APP_ABOUT
+        POPUP "&File", GRAYED
+        BEGIN
+            MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+            MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+            MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+            MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+            MENUITEM SEPARATOR
+            MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+            MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+            MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+            MENUITEM SEPARATOR
+            MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+            , GRAYED
+            MENUITEM SEPARATOR
+        END
+        POPUP "Edit", GRAYED
+        BEGIN
+            MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+            MENUITEM SEPARATOR
+            MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+            MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+            MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_ASIAKKAAT_TALLETAUUSIASIAKAS, VIRTKEY, CONTROL, 
+                                                    NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_ETSI_TYHJENNASIAKASTIED, VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_ASIAKKAAT_HENKTUNNUS, VIRTKEY, NOINVERT
+    VK_F10,         ID_LAINAT_LAINANTAPAHTUMAT, VIRTKEY, NOINVERT
+    VK_F11,         ID_ASIAKKAAT_OSOITE,    VIRTKEY, NOINVERT
+    VK_F12,         ID_ASETUKSET_TYHJENNRUUTU, VIRTKEY, NOINVERT
+    VK_F2,          ID_LAINAT_TULOSTAKUITITSUORITJONONTAP, VIRTKEY, NOINVERT
+    VK_F2,          ID_RAPORTIT_UUSIKUITTI, VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_ETSI_ETSIASIAKAS,    VIRTKEY, NOINVERT
+    VK_F4,          ID_ETSI_ETSILAINA,      VIRTKEY, NOINVERT
+    VK_F5,          ID_LAINAT_UUSILAINA,    VIRTKEY, NOINVERT
+    VK_F6,          ID_LAINAT_LUNASTUS,     VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_LAINAT_UUDISTUS,     VIRTKEY, NOINVERT
+    VK_F8,          ID_LAINAT_VAKUUSMUUTOS, VIRTKEY, NOINVERT
+    VK_F9,          ID_LAINAT_LAINANKULUT,  VIRTKEY, NOINVERT
+    VK_INSERT,      ID_LAINAT_UUSILAINA,    VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 327, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Pantti"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "Versio 3.41- 09.11.2007",IDC_STATIC,47,25,119,8,
+                    SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,270,7,50,14,WS_GROUP
+    LTEXT           "Ylim.säilytysmaksu korjattu, Maksumuistutus2, Login kiinteä, Visa, Kuittikorjausta, peru Visa, OnDblckSuoritusjono otettu pois käytöstä, tapahtumiin muutos-kenttä",
+                    IDC_STATIC,43,41,263,19
+    LTEXT           "23.4.2004, Korjattu ylim.s.maksun laskentaa laina-ajan jälkeen",
+                    IDC_STATIC,41,67,259,8
+    LTEXT           "28.4.2004 Kuitin yht.maksuihin pyöristys, lisätty VARKAUS hk-listaehtoihin",
+                    IDC_STATIC,41,75,263,12
+    LTEXT           "25.5.2004 Odpäivää korjattu",IDC_STATIC,43,87,247,13
+    LTEXT           "9.11.2007 Muutettu tlinro",IDC_STATIC,41,103,121,8
+END
+
+IDD_PANTTI_FORM DIALOGEX 0, 0, 507, 317
+STYLE WS_CHILD
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_LAINANRO,457,6,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Etsi",IDC_ETSI_LAINA,458,22,43,16
+    CONTROL         "Naiset",IDC_SP1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    22,19,36,10
+    CONTROL         "Miehet",IDC_SP2,"Button",BS_AUTORADIOBUTTON,60,19,37,10
+    EDITTEXT        IDC_HTUN,21,35,85,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Ulkom.",IDC_STATIC,110,20,23,8
+    PUSHBUTTON      "Etsi",IDC_ETSI,109,34,43,16
+    COMBOBOX        IDC_SNIMI,21,53,129,300,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_KATUOS,21,68,129,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PTP,21,84,129,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HUOM,3,219,339,51,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Tyhjennä",IDC_TYHJENNA,458,42,43,16
+    PUSHBUTTON      "Talleta uusi",IDC_TALLENNA,25,102,43,16
+    PUSHBUTTON      "Talleta korjaus",IDC_KORJAA,78,102,50,16
+    LTEXT           "Laina kielto ",IDC_STATIC,30,127,40,8
+    PUSHBUTTON      "Uusi",IDC_UUSI_LAINA,458,67,43,16
+    PUSHBUTTON      "Lunastus",IDC_LUNASTUS,458,106,43,16
+    PUSHBUTTON      "Uudistus",IDC_UUDISTUS,458,89,43,16
+    PUSHBUTTON      "Muutos",IDC_VAKMUUTOS,458,123,43,16
+    PUSHBUTTON      "Tapaht.",IDC_LAINAN_TAPAHTUMAT,458,159,43,16
+    LISTBOX         IDC_SUORITUSJONO,347,215,106,60,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Poista jono",IDC_CLEAR_SJONO,458,219,43,16,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "PoistaValittu",IDC_REMOVE_SJONORIVI,458,237,43,16,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Kuitti",IDC_KUITTI,458,276,43,16
+    CONTROL         "<",IDC_KIELTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,
+                    127,8,8
+    CONTROL         "Custom1",IDC_CUSTOM_GRIDLAINAT,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL,154,5,301,146
+    CONTROL         "Custom1",IDC_CUSTOM_GRID_LAINARIVIT,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL,153,152,302,61
+    RTEXT           "Hetu",IDC_STATIC,3,38,16,8
+    RTEXT           "Nimi",IDC_STATIC,3,55,16,8
+    RTEXT           "Os",IDC_STATIC,2,71,15,8
+    RTEXT           "Ptp",IDC_STATIC,7,86,11,8
+    RTEXT           "Sp",IDC_STATIC,7,19,10,8
+    LTEXT           "Maksettava",IDC_STATIC,345,279,38,8
+    EDITTEXT        IDC_SUORITUSJONON_SUMMA,385,290,53,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Vakuusarvo/Laina",IDC_STATIC,3,187,38,12,NOT WS_VISIBLE
+    EDITTEXT        IDC_VAKUUSARVO,45,184,49,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | NOT WS_TABSTOP
+    EDITTEXT        IDC_LAINASUMMA,94,184,49,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_VISIBLE | NOT WS_TABSTOP
+    CONTROL         "",IDC_RUOTS_HTUN,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,97,19,10,10
+    CONTROL         "",IDC_EI_MUIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,83,
+                    127,9,8
+    LTEXT           "",IDC_TILASTOTXT1,3,285,215,11,SS_SUNKEN
+    LTEXT           "",IDC_TILASTOTXT2,3,297,215,11,SS_SUNKEN
+    LTEXT           "",IDC_LAINOJAYHT,3,273,215,11,SS_SUNKEN
+    PUSHBUTTON      "Kulut",IDC_KOROT_JA_SHV_KULUT,458,177,43,16,NOT 
+                    WS_TABSTOP
+    CTEXT           "",IDC_USERINFO,232,275,112,33,SS_SUNKEN
+    LTEXT           "Ei mukeja",IDC_STATIC,95,127,39,8
+    LTEXT           "Eur",IDC_STATIC,441,278,12,10
+    LTEXT           "Mk",IDC_STATIC,130,200,12,8,NOT WS_VISIBLE
+    LTEXT           "Mk",IDC_STATIC,441,290,14,8
+    RTEXT           "-",IDC_LOPPSUMMA_EUROINA,385,277,53,12,SS_SUNKEN
+    LTEXT           "Jos osoite on virheellinen, niin laita postinumero muotoon 00000. Muistutuskirjeet eivät lähde silloin ko. asiakkaalle.",
+                    IDC_STATIC,13,144,135,37
+END
+
+IDD_DLG_YJTILITYS DIALOG DISCARDABLE  0, 0, 203, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alle vuoden vanhojen ylijäämien tilitys"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,146,84,50,14
+    PUSHBUTTON      "Maksa",IDCANCEL,146,64,50,14
+    LTEXT           "Static",IDC_CUSTOMERINFO,7,7,189,8
+    LTEXT           "Static",IDC_YJ,7,21,189,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Pantti MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Pantti\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Pantti.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Pantti Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_PANTTI_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 501
+        VERTGUIDE, 3
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 308
+    END
+
+    IDD_DLG_YJTILITYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Panttilainojen käsittely\nKanikonttori\nPantti\n\n\nPantti.Document\nPantti Document"
+    IDS_PANTTIKUITTI        "Panttikuitti"
+    IDS_PKTEXT1             "Oulun Panttilainakonttori Oy on tämän lainatodistuksen"
+    IDS_PKTEXT2             "mukaan vastaanottanut pantiksi kääntöpuolella"
+    IDS_PANTTINUMERO        "Panttinumero"
+    IDS_PKTEXT3             "olevien yleisten lainaehtojen mukaisesti"
+    IDS_PKTEXT4             "Panttaaja :"
+    IDS_PKTEXT5             "HenkTunnus:"
+    IDS_PKTEXT6             "Osoite    :"
+    IDS_PKTEXT7             "Postinum. :"
+    IDS_PKTEXT8             "Puh.      :"
+    IDS_LAINASUMMA          "Lainasumma"
+    IDS_PVM                 "Päiväys"
+    IDS_PKERAPVM            "Eräpäivä"
+    IDS_KORKO_KK            "Lainan kuukausikorko"
+    IDS_KORKO_KK_YKS        "%/kk"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Pantti"
+    AFX_IDS_IDLEMESSAGE     "F1=HenT F2=Kuitti F3=EtsiAs F4=EtsiLai F5=Uusi F6=Lun F7=Uud F8=Muutos  F9=Kulut F10=Tap F11=Osoite F12=Tyhj. CtrlF2=UusiKuitti"
+    IDS_PANKKIIN3           "päivänä, ottakaa yhteys konttoriimme."
+    IDS_PANKKIIN4           "Tili: Aktia 405572-24460"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit  [Alt-H + x]"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SHV_MAKSUT          "Säilytys-, hoito- ja vak."
+    IDS_SHV_MAKSYT_YKS      "€/laina-aika"
+    IDS_PANKKIIN1           "Maksut voi suorittaa myös pankkiin."
+    IDS_VIITE               "Viitenumero:"
+    IDS_VAKUUTAN_OIK1       "Vakuutan, että olen oikeutettu"
+    IDS_VAKUUTAN_PAIKKAPAIV "Oulussa "
+    IDS_ALLEKIRJ_X          "___________________________________"
+    IDS_ALLEKIRJ_JA         "___________________________________"
+    IDS_LUNASTAJATXT1       "Pantin lunastaja mikäli"
+    IDS_LIITTEETTXT         "Liitteet:"
+    IDS_LUNASTAJATXT2       "  ______________________"
+    IDS_LUNASTAJATXT3       "ei panttaaja:"
+    IDS_VAKUUTAN_OIK2       "tähän panttaukseen ja hyväksyn"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERAPVM_HUOM         "Lainan voi uudistaa /lunastaa aikaisemminkin. Maksut kuluneen laina-ajan mukaan."
+    IDS_PANKKIIN2           "Mikäli suoritatte muulloin kuin erä-"
+    IDS_M_LAJAN_PAATT       "Kulut eräpäivänä"
+    IDS_KORKO               "Korko"
+    IDS_KUITTIMAKSU         "Kuittimaksu"
+    IDS_UUDISTUS            "Uudistus"
+    IDS_LUNASTUS            "Lunastus"
+    IDS_LYHENNYS            "Lyhennys"
+    IDS_YHTEENSA            "YHTEENSÄ"
+    IDS_TOD_VUOSIKORKO      "Todellinen vuosikorko"
+    IDS_KORKO_V_YKS         "%/vuosi"
+    IDS_KUITTI_SUOR_LAMAKSUISTA "Kuitti suoritetuista lainamaksuista"
+    IDS_LAINANUMERO         "Lainanumero"
+    IDS_PAAOMA              "Pääoma"
+    IDS_KUITIN_KATOAMINEN   "Kuitin katoaminen"
+    IDS_MUISTUTUSKIRJE      "Muistutuskirje"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VAKUUKSIEN_VARMISTUS "Vakuuksien varmistus"
+    IDS_POSTITUSKULUT       "Postituskulut"
+    IDS_PANTTITODISTUS      "Panttitodistus"
+    IDS_MUUT_KULUT          "Muut kulut"
+    IDS_VIIVA               "---------------------------------------------------------"
+    IDS_YLIM_SMAKSU         "Ylimääräinen säil. maksu"
+    IDS_VAKUUTAN_OIK3       "panttaukseen liittyvät ehdot ja maksut."
+    IDS_EURO                "€"
+    IDS_ALENNUS             "Alennus ja pyöristys"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HALLINTA_LOPETUS     "Ohjelman pysäytys [ Alt-H - L]"
+    ID_HALLINTA_KASSANSALDO "Tarkastaa kassan saldon. Hyväksyminen kuittaa kassan rahamäärän vastaamaan laskettua summaa."
+    ID_RAPORTIT_KASSAPIVKIRJA "Tulostaa raportin kassojen saldoista"
+    ID_RAPORTIT_MUISTUTUSKIRJEET "Muodostaa tietokantaan muistutuskirjelistan"
+    ID_HUUTOKAUPPA_HAKULISTA "Huutokaupan hakulista asetustietojen mukaan"
+    ID_HUUTOKAUPPA_SIIRTOHUUTOKAUPPAAN 
+                            "Lainojen siirto huutokauppaan uuden hakulistan mukaisesti"
+    ID_HUUTOKAUPPA_HUUTOKAUPPA "Huutokauppalainojen hallinta"
+    ID_HUUTOKAUPPA_LAINANSIIRTOHUUTOKAUPPAAN 
+                            "Yksittäisen (valitun) lainan siirto hk:aan"
+    ID_RAPORTIT_ODOTUSLISTA "Tulostaa listan aktiivisista lainoista joille merkitty odotuspvm."
+    ID_HUUTOKAUPPA_YLIJMKIRJEET 
+                            "Tulostaa kirjeet asiakkaille huutokaupan ylijäämistä"
+    ID_HUUTOKAUPPA_YLIJMNKUITTAUSASIAKKAALLE 
+                            "Maksetaan asiakkaan noutama ylijäämä ja tehdään kuitti."
+    ID_HUUTOKAUPPA_YLIJMNKUITTLAINAAMOLLE 
+                            "Asiakas ei ole lunastanut ylijäämää määräajassa -> kuitataan ylijäämä lainaamolle"
+    ID_HUUTOKAUPPA_VAPAAEHTALIJPERIMINENASIAKKAALTA 
+                            "Asiakkaan vapaaehtoisesti maksama alijäämä kuitataan ja se pienentää asiakkaan alij. tilastotiedoissa"
+    ID_ETSI_ETSIASIAKAS     "Etsii asiakkaan joko (osa)nimen tai henkilötunnuksen perusteella"
+    ID_ETSI_ETSILAINA       "Etsii lainan lainanumeron perusteella"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_LAINAT_UUSILAINA     "Uuden lainan tekeminen valitulle asiakkaalle [Alt-L + U]"
+    ID_LAINAT_LUNASTUS      "Ruudulle valitun lainan lunastus  [Alt-L  + L]"
+    ID_LAINAT_UUDISTUS      "Ruudulle valitun lainan uudistaminen [Alt-L  + D]"
+    ID_LAINAT_VAKUUSMUUTOS  "Rudulle valitun lainan muutokset. Lainatietojen korjaaminen ja tallettaminen [Alt-L  + M]"
+    ID_LAINAT_HALTIJANMUUTOS "Lainan siirto toiselle asiakkaalle"
+    ID_LAINAT_LAINALUOTTOTAPPIOIHIN "Lainan kuittaaminen luottotappioihin"
+    ID_LAINAT_LAINANMITTINTI 
+                            "Poistaa juuri tehdyn uuden lainan tai vanhan lainan tapahtuman"
+    ID_LAINAT_SIIRTOHUUTOKAUPPAAN 
+                            "Ruudulle valitun lainan merkitseminen huutokaupattavaksi"
+    ID_HALLINTA_TUOTTEET    "Tuotetietojen tallettaminen"
+    ID_HALLINTA_KASSAT      "Kassojen nimet"
+    ID_HALLINTA_ARVIOMIEHET "Arviomiesten nimet"
+    ID_HALLINTA_ASIAKKAAT   "Asiakastietojen selaaminen ja korjaaminen"
+    ID_HALLINTA_ASETUKSET   "Ohjelman oletusarvot ja rajapäivämäärät"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    65535                   "Tietoja ohjelmasta"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OHJE_TIETOJA         "Ohjelman kytön opastus"
+    ID_ETSI_TYHJENNASIAKASTIED 
+                            "Tyhjentää asiakastietojen rivit uutta asiakkaan etsintää varten"
+    ID_ASIAKKAAT_TALLETAUUSIASIAKAS 
+                            "Tallettaa uuden asiakkaan tietokantaan. Asiakkaalla on oltava yksikäsitteinen henkilötunnus"
+    ID_ASIAKKAAT_TALLETAMUUTTUNEETASIAKASTIEDOT 
+                            "Tallettaa muutokset olemassaolevan asikkaan tietoihin"
+    ID_LAINAT_LAINANKULUT   "Laskee taulukon lainan kuluista haluttuna päivämääränä"
+    ID_LAINAT_LAINANTAPAHTUMAT "Näyttää lainan aikaisemmat tapahtumat"
+    ID_LAINAT_TULOSTAKUITITSUORITJONONTAP 
+                            "Tulostaa paperille mahdolliset panttikuitit"
+    ID_RAPORTIT_KASSALOKI   "Näyttää kassatapahtumat halutulta päivältä - Kaikki tai jokin tietty kassa"
+    ID_RAPORTIT_KIRJE1      "Tulostaa kirjeen #1"
+    ID_RAPORTIT_KIRJE2      "Tulostaa muistutuskirjeen #2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RAPORTIT_UUSIKUITTI  "Tulostaa kirjoittimella uuden kopion viimeisestä lainatapahtuman kuitista"
+    ID_ASIAKKAAT_HENKTUNNUS "Siirtää kohdistimen HenkTun-kenttään"
+    ID_ASETUKSET_TYHJENNRUUTU "Tyhjentää ikkunan tiedot"
+    ID_ASIAKKAAT_OSOITE     "Siirtää kohdistimen osoiteriville"
+    ID_HUUTOKAUPPA_ALLEVUODENVANHATYLIJMT 
+                            "Maks asiakkaaan ylijäämät riippumatta mu-kirjeiden läh"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Finnish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FIN)
+#ifdef _WIN32
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CAYOTE              ICON    DISCARDABLE     "res\\cayote.ico"
+IDI_BUGS                ICON    DISCARDABLE     "res\\Bugs.ico"
+IDI_BUNNY               ICON    DISCARDABLE     "res\\bunny.ico"
+IDI_rabbit2             ICON    DISCARDABLE     "res\\rabbit2.ico"
+IDI_RABBIT_RUNNING      ICON    DISCARDABLE     "res\\rabbit.ico"
+IDI_WHISTLE             ICON    DISCARDABLE     "res\\whistle_ex.ico"
+IDI_HOURCLASS           ICON    DISCARDABLE     "res\\hourglass.ico"
+IDI_HAMMER              ICON    DISCARDABLE     "res\\hammer.ico"
+IDI_PKNIFE              ICON    DISCARDABLE     "res\\pknife.ico"
+IDI_TOOLS               ICON    DISCARDABLE     "res\\tools.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_ENSIM_LNR DIALOG DISCARDABLE  0, 0, 186, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Ensimmäinen lainanumero"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,29,50,14
+    LTEXT           "Ensimmäisen lainan numero ?",IDC_STATIC,14,33,105,8
+    EDITTEXT        IDC_ENSLAINANNR,25,16,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DLG_UUSI_LAINA DIALOG DISCARDABLE  0, 0, 499, 272
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Uusi laina"
+FONT 8, "System"
+BEGIN
+    CONTROL         "Custom1",IDC_UUDEN_LAINAN_RIVIT,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,54,485,115
+    COMBOBOX        IDC_HENK_TARK,412,201,80,74,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Tee laina",IDC_TEELAINA,442,236,50,29
+    PUSHBUTTON      "Peru",IDC_PERU,394,251,44,14
+    PUSHBUTTON      "Laske",IDC_BTN_LASKE,367,251,24,14
+    EDITTEXT        IDC_SAILVAKMAKSU_PR,175,31,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VARASTO,303,21,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_YLIMSAILMAKSU,303,35,40,14,ES_AUTOHSCROLL
+    CONTROL         "Ei muistutusta",IDC_EIMUISTUTUSTA,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,433,23,59,10
+    EDITTEXT        IDC_HUOM,7,183,180,34,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_HUOM2,7,230,180,33,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_LIITTEET,244,222,107,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAINAN_TUOTERYHMA,268,237,83,74,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LAINANNIMI,244,251,107,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    PUSHBUTTON      "cancel",IDCANCEL,357,232,27,14,NOT WS_VISIBLE
+    LTEXT           "Päiväys",IDC_STATIC,19,19,26,8
+    LTEXT           "Eräpäivä",IDC_STATIC,19,33,29,8
+    LTEXT           "SäilytysVakMaksu %/kk",IDC_STATIC,93,35,77,8
+    LTEXT           "Ylim. säilytysmaksu",IDC_STATIC,223,36,79,8
+    LTEXT           "Liitteet",IDC_STATIC,191,225,22,8
+    EDITTEXT        IDC_PVM,51,18,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_ERAPV,51,32,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Huomautuksia lainalle",IDC_STATIC,7,175,70,8
+    PUSHBUTTON      "Kuitti",IDKUITTI,358,7,9,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Lainan nimi",IDC_STATIC,191,252,51,8
+    LTEXT           "Henkilöllisyys tarkastettu",IDC_STATIC,321,203,88,8
+    LTEXT           "Korko %/kk",IDC_STATIC,135,19,38,8
+    EDITTEXT        IDC_KORKOPR,175,17,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Test printer",IDC_BTEST,372,7,6,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "Testprint 2",IDC_BUTTON1,381,7,6,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "-",IDC_HTUN_NIMI,7,7,344,8
+    LTEXT           "Huom tapahtumalle (uusi laina)",IDC_STATIC,7,220,179,8
+    LTEXT           "Lainan tuoteryhmä",IDC_STATIC,191,238,75,8
+    LTEXT           "Varasto",IDC_STATIC,275,26,25,8,NOT WS_VISIBLE
+    LTEXT           "Vakuusarvo/Laina",IDC_STATIC,348,184,60,8
+    LTEXT           "Eur/kk",IDC_STATIC,346,38,38,8
+    RTEXT           "",IDC_VAKUUSARVO,410,181,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "",IDC_LAINASUMMA,452,181,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Tab / Enter -> seuraava ruutu",IDC_STATIC,220,172,95,8
+    LTEXT           "F2 = 'Tee laina'",IDC_STATIC,220,181,70,8
+    LTEXT           "End = korjaa ed. tekstiä",IDC_STATIC,220,190,96,8
+    EDITTEXT        IDC_SEURAAVA_LYHENNYS,452,36,40,14,ES_AUTOHSCROLL
+    RTEXT           "Seuraava lyhennys",IDC_STATIC,379,39,73,8
+END
+
+IDD_DLG_LUNASTUS DIALOG DISCARDABLE  0, 0, 449, 277
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lunastus"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        IDC_HENK_TARK,333,235,87,74,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Lunasta",IDC_LUNASTA,374,250,45,14
+    EDITTEXT        IDC_YLIMSAILMAKSU,393,60,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VAKUUSVARMENNUSMAKSU,393,135,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSTITUSKULUT,393,149,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALENNUS,393,163,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Peru",IDC_PERU,327,250,37,14
+    PUSHBUTTON      "Laske",IDC_LASKE,276,250,39,14
+    EDITTEXT        IDC_HUOM,7,183,203,19,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Ei muistutusta",IDC_EIMUISTUTUSTA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,41,59,10
+    EDITTEXT        IDC_LIITTEET,160,75,128,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "PerustamisPv",IDC_STATIC,13,31,48,8
+    LTEXT           "Eräpäivä",IDC_STATIC,26,45,29,8
+    RTEXT           "SäilytysVakMaksu",IDC_STATIC,320,49,63,8
+    RTEXT           "Kuittimaksu",IDC_STATIC,340,79,43,8
+    RTEXT           "Ylim. säilytysmaksu",IDC_STATIC,305,63,78,8
+    LTEXT           "Liitteet",IDC_STATIC,115,76,26,8
+    LTEXT           "Vakuusarvo",IDC_STATIC,223,27,39,8
+    EDITTEXT        IDC_PVM,63,29,46,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ERAPV,63,43,46,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Static",IDC_NIMI_HTUN,7,6,188,16
+    LTEXT           "Huomautuksia lunastusta varten, näkyy lainan tapahtumissa",
+                    IDC_STATIC,7,170,219,8
+    LTEXT           "Lainan nimi",IDC_STATIC,115,58,43,8
+    EDITTEXT        IDC_LAINANNIMI,160,57,128,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Korko % / kk",IDC_STATIC,223,222,42,8,NOT WS_VISIBLE
+    LTEXT           "Lainan numero",IDC_STATIC,209,6,53,8
+    LTEXT           "Static",IDC_LNR,268,6,46,15,WS_BORDER
+    GROUPBOX        "Korkolaskelma",IDC_STATIC,7,92,296,78
+    LTEXT           "Korkopäiviä yht",IDC_STATIC,15,101,50,8
+    RTEXT           "Static",IDC_KORKOPAIVIA,71,100,40,12,SS_SUNKEN
+    LTEXT           "Päiväys",IDC_STATIC,29,61,26,8
+    RTEXT           "Static",IDC_LUNASTUSPAIVA,63,58,46,14,SS_SUNKEN
+    RTEXT           "Static",IDC_LAINASUMMA,61,258,40,12,SS_SUNKEN | NOT 
+                    WS_VISIBLE
+    LTEXT           "Laina-ajan korko",IDC_STATIC,185,100,55,8
+    LTEXT           "Ylitys-ajan korko",IDC_STATIC,185,116,52,8
+    LTEXT           "Korkokuukausia",IDC_STATIC,13,113,52,8
+    RTEXT           "Static",IDC_KORKOKUUKAUSIA,71,114,40,12,SS_SUNKEN
+    LTEXT           "Korko / kk",IDC_STATIC,117,97,35,8
+    RTEXT           "Static",IDC_KUUKAUSIKORKO,117,107,40,12,SS_SUNKEN
+    LTEXT           "Eur",IDC_STATIC,158,108,12,8
+    RTEXT           "Static",IDC_KUUKAUSIKORKO_YHT,243,100,40,12,SS_SUNKEN
+    LTEXT           "Eur",IDC_STATIC,287,100,12,8
+    LTEXT           "Ylityspäiviä",IDC_STATIC,16,125,40,8
+    RTEXT           "Static",IDC_YLITYSAIKA_PV,71,128,40,12,SS_SUNKEN
+    LTEXT           "Korko / pv",IDC_STATIC,171,262,35,8,NOT WS_VISIBLE
+    RTEXT           "Static",IDC_PAIVAKORKO,210,258,40,12,SS_SUNKEN | NOT 
+                    WS_VISIBLE
+    LTEXT           "Eur",IDC_STATIC,254,262,12,8,NOT WS_VISIBLE
+    RTEXT           "Static",IDC_VIIVASTYSKORKO_YHT,243,116,40,12,SS_SUNKEN
+    LTEXT           "Eur",IDC_STATIC,287,118,12,8
+    LTEXT           "KOROT YHT",IDC_STATIC,185,132,43,8
+    RTEXT           "Static",IDC_KORKO_YHT,243,134,40,12,SS_SUNKEN | 
+                    WS_BORDER
+    LTEXT           "Yhteenveto maksuista",IDC_STATIC,337,6,71,8
+    RTEXT           "Laina",IDC_STATIC,365,20,18,8
+    LTEXT           "Eur",IDC_STATIC,287,138,12,8
+    RTEXT           "",IDC_LAINASUMMA2,393,17,40,12,SS_SUNKEN | WS_BORDER
+    RTEXT           "Korko YHT",IDC_STATIC,347,34,36,8
+    RTEXT           "MAKSETTAVA YHT.",IDC_STATIC,315,184,68,8
+    PUSHBUTTON      "Kuitti",IDC_KUITTI,130,256,35,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    RTEXT           "Kuitin katoaminen",IDC_STATIC,319,92,64,8
+    RTEXT           "Muistutuskirje1",IDC_STATIC,315,108,68,8
+    RTEXT           "Muistutuskirje2",IDC_STATIC,315,121,68,8
+    RTEXT           "Vakuusvarmennus",IDC_STATIC,323,138,60,8
+    RTEXT           "Postituskulut",IDC_STATIC,339,151,44,8
+    RTEXT           "Alennus",IDC_STATIC,357,166,26,8
+    LTEXT           "S+H+Vak %/kk",IDC_STATIC,221,206,50,8,NOT WS_VISIBLE
+    LTEXT           "SHVK-Maksu/kk",IDC_STATIC,117,124,55,8
+    LTEXT           "Korkokuukausia",IDC_STATIC,15,142,52,8
+    LTEXT           "SHV-Maksu Yht",IDC_STATIC,185,148,52,8
+    LTEXT           "Pyöristys = 0",IDC_PYORISTYS,350,213,70,8
+    RTEXT           "Static",IDC_KORKOPRKK,266,220,40,12,SS_SUNKEN | NOT 
+                    WS_VISIBLE
+    RTEXT           "Static",IDC_SHV_PR,275,206,40,12,SS_SUNKEN | NOT 
+                    WS_VISIBLE
+    RTEXT           "Static",IDC_KORKO_KK,71,142,40,12,SS_SUNKEN
+    RTEXT           "Static",IDC_SHV_MK_KK,117,134,40,12,SS_SUNKEN
+    LTEXT           "yhteensä",IDC_STATIC,17,150,30,8
+    LTEXT           "Eur",IDC_STATIC,158,136,12,8
+    RTEXT           "Static",IDC_SHV_MAKSU_YHT1,243,151,40,12,SS_SUNKEN | 
+                    WS_BORDER
+    LTEXT           "Eur",IDC_STATIC,287,154,12,8
+    RTEXT           "Static",IDC_KORKO_YHT2,393,32,40,12,SS_SUNKEN
+    RTEXT           "Static",IDC_SHV_YHT2,393,46,40,12,SS_SUNKEN
+    LTEXT           "Static",IDC_VAKUUSARVO,268,26,46,15,SS_SUNKEN
+    RTEXT           "Static",IDC_KUITTIMAKSU,393,77,40,12,SS_SUNKEN
+    RTEXT           "Static",IDC_KATOAMISMAKSU,393,90,40,12,SS_SUNKEN
+    RTEXT           "Static",IDC_MUISTUTUSKIRJEMAKSU1,393,106,40,12,
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_MUISTUTUSKIRJEMAKSU2,393,119,40,12,
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_MAKSETTAVAYHT,393,186,40,12,SS_SUNKEN
+    LTEXT           "Henkilöllisyys tarkastettu",IDC_STATIC,325,224,96,10
+    PUSHBUTTON      "OK",IDC_OK,103,256,19,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDC_CANCEL,32,256,21,14,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_LOPPUSUMMA_MK,395,201,35,8
+    LTEXT           "mk",IDC_STATIC,432,202,10,8
+    LTEXT           "Static",IDC_LAHUOM,7,216,201,31,WS_BORDER
+    LTEXT           "Lainakohtainen huomautus",IDC_STATIC,7,205,200,8
+    LTEXT           "Ylim smaksu/kk",IDC_STATIC,16,159,53,8
+    RTEXT           "Static",IDC_YLIMSAILMAKSUPERKUUKAUSI,71,155,40,12,
+                    SS_SUNKEN
+END
+
+IDD_DLG_UUDISTUS DIALOG DISCARDABLE  0, 0, 466, 332
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Uudistus"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Uudista",IDC_UUDISTA,409,308,42,17
+    EDITTEXT        IDC_LAINAN_LYHENNYKSET,377,61,67,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_LAINAN_KOROTUS,377,75,67,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSTITUSKULUT,377,204,67,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALENNUS,377,218,67,14,ES_RIGHT | ES_AUTOHSCROLL
+    COMBOBOX        IDC_HENK_TARK,377,289,67,74,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Peru",IDC_PERU,355,307,46,18
+    PUSHBUTTON      "Laske",IDC_LASKE,303,307,46,18
+    CONTROL         "Ei muistutusta",IDC_EIMUISTUTUSTA,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT,49,70,59,10
+    EDITTEXT        IDC_LIITTEET,51,203,153,14,ES_AUTOHSCROLL | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_LAINANNIMI,51,218,153,14,ES_AUTOHSCROLL | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HUOM,4,248,250,26,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "cancel",IDCANCEL,266,313,30,12,NOT WS_VISIBLE
+    LTEXT           "PerustamisPv",IDC_STATIC,4,39,50,8
+    LTEXT           "Eräpäivä",IDC_STATIC,29,52,29,8
+    RTEXT           "SäilytysVakMaksu",IDC_STATIC,309,101,64,8
+    RTEXT           "Kuittimaksu",IDC_STATIC,333,130,40,8
+    RTEXT           "Ylim. säilytysmaksu",IDC_STATIC,305,114,68,8
+    LTEXT           "Liitteet",IDC_STATIC,24,207,22,8
+    LTEXT           "Vakuusarvo",IDC_STATIC,116,25,39,8
+    EDITTEXT        IDC_PVM,64,38,46,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_ERAPV,64,52,46,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Huomautuksia uudistukseen, näkyy lainan tapahtumissa",
+                    IDC_STATIC,4,237,255,8
+    LTEXT           "Lainan nimi",IDC_STATIC,4,221,42,8
+    EDITTEXT        IDC_VAKUUSARVO,158,25,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Korko%/kk",IDC_STATIC,10,173,36,8
+    EDITTEXT        IDC_KORKOPR,63,170,40,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Lainan numero",IDC_STATIC,4,25,51,8
+    GROUPBOX        "Korkolaskelma, tähän mennessä kertyneet kulut. ",
+                    IDC_STATIC,4,121,251,78
+    LTEXT           "Laina-aika pv",IDC_STATIC,10,157,45,8
+    RTEXT           "",IDC_KORKOPAIVIA,63,155,40,12,SS_SUNKEN
+    LTEXT           "Uudistuspäivä",IDC_STATIC,10,140,50,8
+    RTEXT           "",IDC_UUDISTUSPAIVA,63,137,40,12,SS_SUNKEN
+    RTEXT           "Lainasumma",IDC_STATIC,329,20,44,8
+    RTEXT           "",IDC_LAINASUMMA,376,16,67,14,SS_SUNKEN
+    LTEXT           "Korko / pv",IDC_STATIC,151,133,35,8
+    RTEXT           "",IDC_PAIVAKORKO,193,133,40,12,SS_SUNKEN
+    LTEXT           "Eur",IDC_STATIC,238,135,12,8
+    LTEXT           "Korot YHTEENSÄ",IDC_STATIC,128,162,58,8
+    RTEXT           "",IDC_KORKO_YHT,193,159,40,12,SS_SUNKEN | WS_BORDER
+    RTEXT           "Lyhennykset",IDC_STATIC,326,65,47,8
+    LTEXT           "Eur",IDC_STATIC,238,162,12,8
+    RTEXT           "Korot YHT",IDC_STATIC,339,48,34,8
+    RTEXT           "MAKSETTAVA YHT.",IDC_STATIC,305,239,68,8
+    PUSHBUTTON      "Kuitti",IDC_KUITTI,143,311,36,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "S+H+Vak %/kk",IDC_STATIC,201,300,50,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_SHV_PR,255,297,40,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Korkopäiviä",IDC_STATIC,89,301,38,8,NOT WS_VISIBLE
+    RTEXT           "",IDC_KORKOPAIVIA_LAINA_AJALLA,133,301,40,10,SS_SUNKEN | 
+                    NOT WS_VISIBLE
+    LTEXT           "SHV-Maksut/ pv",IDC_STATIC,136,149,54,8
+    RTEXT           "",IDC_SHV_PAIVAKORKO,193,146,40,12,SS_SUNKEN
+    LTEXT           "Eur",IDC_STATIC,238,149,12,8
+    RTEXT           "",IDC_LAJAN_SHVKORKO_YHT,181,315,40,10,SS_SUNKEN | NOT 
+                    WS_VISIBLE
+    RTEXT           "",IDC_KORKOPAIVIA_LAINA_AJAN_YLI,100,315,40,10,
+                    SS_SUNKEN | NOT WS_VISIBLE
+    LTEXT           "Korko-kk",IDC_STATIC,4,297,30,8,NOT WS_VISIBLE
+    RTEXT           "",IDC_KORKOKK_LAINA_AJAN_YLI,38,297,40,10,SS_SUNKEN | 
+                    NOT WS_VISIBLE
+    LTEXT           "Kuukausikorko",IDC_STATIC,147,293,48,8,NOT WS_VISIBLE
+    RTEXT           "",IDC_KKKORKO_LAINA_AJAN_YLI,199,289,40,10,SS_SUNKEN | 
+                    NOT WS_VISIBLE
+    LTEXT           "Yht",IDC_STATIC,4,311,12,8,NOT WS_VISIBLE
+    RTEXT           "",IDC_KKKORKO_YHT_LAINA_AJAN_YLI,22,308,40,10,SS_SUNKEN | 
+                    NOT WS_VISIBLE
+    LTEXT           "SHV-maksut YHTEENSÄ",IDC_STATIC,105,175,81,8
+    RTEXT           "",IDC_SHVYHTEENSA,193,173,40,12,SS_SUNKEN | WS_BORDER
+    LTEXT           "Eur",IDC_STATIC,65,311,12,8,NOT WS_VISIBLE
+    LTEXT           "Eur",IDC_STATIC,238,175,12,8
+    LTEXT           "Yhteenveto maksuista",IDC_STATIC,358,33,74,12
+    RTEXT           "Kuitin katoaminen",IDC_STATIC,309,146,64,8
+    RTEXT           "Muistutuskirjemaksu1",IDC_STATIC,298,159,75,8
+    RTEXT           "Muistutuskirjemaksu2",IDC_STATIC,299,175,74,8
+    RTEXT           "Vakuusvarmennus",IDC_STATIC,313,191,60,8
+    RTEXT           "Postituskulut",IDC_STATIC,328,205,45,8
+    RTEXT           "Alennus",IDC_STATIC,347,221,26,8
+    LTEXT           "Pyöristys = 0",IDC_PYORISTYS,350,267,82,8
+    LTEXT           "Static",IDC_NIMI_HTUN,4,7,295,14
+    LTEXT           "Static",IDC_LNR,64,24,46,14,WS_BORDER
+    RTEXT           "",IDC_KORKO_YHT_2,377,45,67,14,SS_SUNKEN
+    RTEXT           "",IDC_SAILVAKMAKSU,377,98,67,14,SS_SUNKEN
+    RTEXT           "",IDC_KUITTIMAKSU,377,127,67,14,SS_SUNKEN
+    RTEXT           "",IDC_KATOAMISMAKSU,377,143,67,14,SS_SUNKEN
+    RTEXT           "",IDC_MUISTUTUSMAKSU1,377,157,67,14,SS_SUNKEN
+    RTEXT           "",IDC_MUISTUTUSMAKSU2,377,172,67,14,SS_SUNKEN
+    RTEXT           "",IDC_VAKUUSVARMENNUS,377,186,67,14,SS_SUNKEN
+    RTEXT           "",IDC_MAKSETTAVAYHT,377,239,67,14,SS_SUNKEN
+    LTEXT           "Henkilöllisyys tarkastettu",IDC_STATIC,349,278,93,10
+    PUSHBUTTON      "OK",IDC_OK,225,311,32,14,NOT WS_VISIBLE
+    RTEXT           "Korotus",IDC_STATIC,332,78,41,8
+    LTEXT           "Static",IDC_LOPPUSUMMA_MK,394,257,42,8
+    LTEXT           "Mk",IDC_STATIC,440,256,11,8
+    LTEXT           "Static",IDC_LAHUOM,130,56,176,49,WS_BORDER
+    LTEXT           "HUOM! Lainakohtainen, talletetaan muutos-ikkunassa ",
+                    IDC_STATIC,131,43,202,8
+    LTEXT           "lainakohtainen",IDC_STATIC,50,80,49,8
+    EDITTEXT        IDC_YLIMSAILMAKSU,377,112,67,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_SEURAAVA_LYHENNYS2,69,89,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    RTEXT           "Seuraava lyhennys",IDC_STATIC,4,92,65,8
+    LTEXT           "Ylim s-maksu/kk",IDC_STATIC,4,187,56,8
+    RTEXT           "",IDC_YLIMSAILMAKSUPERKK,63,183,40,12,SS_SUNKEN
+END
+
+IDD_DLG_VAKMUUTOS DIALOG DISCARDABLE  0, 0, 585, 343
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION 
+"Lainan vakuusmuutos: Tietojen korj. / Lunastus / Uudistus (Korotus,Pantin lunastus, Lainan lyh.)"
+
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ODOTUSPVM,485,76,50,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KOROTUS,538,206,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_VAPAAEHT_LYH,538,188,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALENNUS,538,276,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Uud/Lun",IDC_UUDISTUS_TAI_LUNASTUS,540,322,38,14
+    PUSHBUTTON      "Peru",IDC_PERU,496,322,38,14
+    EDITTEXT        IDC_VARMENNUS,390,296,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Talleta",IDC_TALLETA_LAINATIEDOT,540,78,38,14
+    PUSHBUTTON      "Laske",IDC_BTN_LASKE,450,322,38,14
+    EDITTEXT        IDC_LAINANNIMI,77,26,159,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAINAN_TUOTERYHMA,77,41,159,74,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LIITTEET,77,54,159,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HUOM,78,70,159,39,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "Lainakielto",IDC_LAINANKIELTO,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,252,29,50,10
+    EDITTEXT        IDC_TOIMENPIDEKIELTOPVM,317,28,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KATOAMISMAKSU,317,45,40,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_LAINAN_KIELTO,361,39,72,12,ES_AUTOHSCROLL
+    CONTROL         "Ei muistutusta",IDC_EIMUISTUTUSTA,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,239,83,59,10
+    EDITTEXT        IDC_VARASTO,68,316,40,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        IDC_KORKOPR,134,253,25,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SAILVAKMAKSU_PR,134,266,25,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_YLIMSAILMAKSU2,218,249,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MUIST_HUOM,155,318,199,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSTITUS,315,295,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,388,322,16,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_KUITIN_KATOAMINEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,293,48,9,8
+    LTEXT           "-",IDC_NIMI_HTUN,7,1,222,14
+    LTEXT           "Uusi eräpäivä",IDC_STATIC,459,39,44,8
+    LTEXT           "SäilytysVak-maksu %/kk",IDC_STATIC,54,268,78,8
+    LTEXT           "Lainan huomautukset",IDC_STATIC,0,70,71,8
+    EDITTEXT        IDC_ERAPV,511,37,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Lainan nimi",IDC_STATIC,31,29,37,8
+    LTEXT           "Korko% /kk",IDC_STATIC,93,256,38,8
+    CONTROL         "Custom1",IDC_MUUTOS_LAINARIVIT,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,113,571,74
+    LTEXT           "Kuittimaksu",IDC_STATIC,174,265,37,8
+    LTEXT           "Ylim. säilytysm",IDC_STATIC,170,250,45,8
+    RTEXT           "MAKSETTAVA ",IDC_STATIC,455,295,75,10
+    EDITTEXT        IDC_MAKSETTAVA_YHT,538,292,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Henkilöllisyystod.",IDC_STATIC,374,284,54,8
+    LTEXT           "Muistutuskirj",IDC_STATIC,303,85,40,8
+    EDITTEXT        IDC_MUISTUTUSKIRJE1_PVM,343,79,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_MUISTUTUSKIRJE2_PVM,395,79,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Vakuusvarm",IDC_STATIC,269,281,40,8
+    LTEXT           "Postituskulut",IDC_STATIC,269,301,41,8
+    LTEXT           "Alennus",IDC_STATIC,503,279,26,8
+    LTEXT           "-",IDC_LNRO_PV_EPV,336,6,242,8
+    LTEXT           "Korko yht",IDC_STATIC,178,279,31,8
+    RTEXT           "",IDC_KORKOPAIVIA_LAINA_AJALLA,134,282,25,10,SS_SUNKEN
+    LTEXT           "Laina-ajan ylittävältä osalta",IDC_STATIC,45,301,86,8
+    RTEXT           "",IDC_KORKOPAIVIA_LAINA_AJAN_YLI,133,298,25,10,
+                    SS_SUNKEN
+    LTEXT           "Laina-ajan korkopäivät",IDC_STATIC,57,283,73,8
+    LTEXT           "Lyhennys",IDC_STATIC,499,190,31,8
+    LTEXT           "SHV-mak.yht",IDC_STATIC,169,301,42,8
+    LTEXT           "Kuitin kat.",IDC_STATIC,255,48,32,8
+    LTEXT           "Muist.k.mak1",IDC_STATIC,269,250,43,8
+    LTEXT           "Muist.k.mak2",IDC_STATIC,269,263,43,8
+    EDITTEXT        IDC_MUISTUTUSKIRJEMAKSU1,315,247,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_MUISTUTUSKIRJEMAKSU2,316,261,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Pyöristys = 0",IDC_PYORISTYS,502,267,76,8
+    LTEXT           "Lainan liitteet",IDC_STATIC,23,55,43,8
+    LTEXT           "Odotuspvm",IDC_STATIC,439,81,37,8
+    LTEXT           "Varasto",IDC_STATIC,34,319,25,8,NOT WS_VISIBLE
+    LTEXT           "Tuoteryhmä",IDC_STATIC,30,43,38,8
+    LTEXT           "pv",IDC_STATIC,306,31,9,8
+    LTEXT           "syy",IDC_STATIC,366,29,11,8
+    EDITTEXT        IDC_LUNASTETUTPANTIT,538,226,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_GROUP | NOT WS_TABSTOP
+    LTEXT           "Lunastetut pantit",IDC_STATIC,476,228,54,8
+    RTEXT           "Static",IDC_KORKO_YHT,218,278,40,14,SS_SUNKEN
+    RTEXT           "Static",IDC_KUITTIMAKSU,218,263,40,14,SS_SUNKEN
+    RTEXT           "Static",IDC_SHV_MAKSUT_YHT,218,295,40,14,SS_SUNKEN
+    RTEXT           "Static",IDC_VAKUUSVARMENNUSMAKSU,315,276,40,14,
+                    SS_SUNKEN
+    LTEXT           "Korotus",IDC_STATIC,505,209,25,8
+    LTEXT           "Kulut yht",IDC_STATIC,505,248,28,8
+    RTEXT           "Static",IDC_KULUT_YHT,538,248,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Static",IDC_LOPPUSUMMA_MK,502,310,56,10
+    LTEXT           "Mk",IDC_STATIC,563,308,15,10
+    LTEXT           "Näkyy uudistus- ja",IDC_STATIC,10,83,58,8
+    LTEXT           "lunastus-ikkunassa",IDC_STATIC,7,94,61,8
+    LTEXT           "Älä talleta, jos korotat tai lyhennät lainaa",
+                    IDC_STATIC,439,57,133,12,WS_BORDER
+    LTEXT           "Kun muutat vakuusarvoa, paina lasketa ja talleta. Kun muutat ykspainoa tai kuvausta, paina talleta.",
+                    IDC_STATIC,69,203,340,15
+    LTEXT           "Ylim. säilytysm/kk",IDC_STATIC,158,231,59,8
+    EDITTEXT        IDC_YLIMSAILMAKSU3,218,229,40,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Jos virkavallan toimesta kielto, kirjoita POLIISI.",
+                    IDC_STATIC,318,15,154,12,SS_SUNKEN | WS_BORDER
+END
+
+IDD_DLG_ASETUS DIALOG DISCARDABLE  0, 0, 480, 314
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Panttiohjelman asetustiedot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Talleta",IDOK,424,249,50,14
+    PUSHBUTTON      "Peru",IDCANCEL,424,293,50,14
+    LTEXT           "Toimisto",IDC_STATIC,19,24,27,8
+    LTEXT           "Katuos.",IDC_STATIC,21,36,25,8
+    LTEXT           "Ptp",IDC_STATIC,22,49,12,8
+    LTEXT           "Puh",IDC_STATIC,21,62,14,8
+    LTEXT           "Fax",IDC_STATIC,23,75,12,8
+    LTEXT           "Laina-aika\nkuukausina",IDC_STATIC,171,21,43,17
+    LTEXT           "<",IDC_STATIC,112,249,8,8
+    LTEXT           "<",IDC_STATIC,185,249,8,8
+    LTEXT           "<",IDC_STATIC,258,248,8,8
+    LTEXT           ">=",IDC_STATIC,313,249,8,8
+    LTEXT           "Lainan määrä",IDC_STATIC,27,250,44,8
+    LTEXT           "Korko-% / kuukausi",IDC_STATIC,12,264,63,8
+    GROUPBOX        "Luokittelu ( Korkoprosentit uuden lainan tekemistä varten ) Rajat (€)",
+                    IDC_STATIC,78,235,277,41
+    GROUPBOX        "Yhteystiedot",IDC_STATIC,7,7,151,84
+    LTEXT           "Myynnin valmistelumaksu %",IDC_STATIC,17,111,88,8
+    LTEXT           "Myynnin valmistelumaksuaika er",IDC_STATIC,17,121,128,8
+    LTEXT           "Kuittimaksu",IDC_STATIC,76,148,37,8
+    LTEXT           "Muistutuskirjemaksu",IDC_STATIC,49,161,64,8
+    LTEXT           "Huutokauppamaksu %",IDC_STATIC,297,54,72,8
+    LTEXT           "Huutokaupan poistomaksu",IDC_STATIC,283,67,86,8
+    LTEXT           "Myynnnin valm.maksu %",IDC_STATIC,291,81,78,8
+    LTEXT           "Postitusmaksu",IDC_STATIC,68,202,46,8
+    LTEXT           "Kuitin katoaminen",IDC_STATIC,56,176,57,8
+    LTEXT           "Vakuusvarmennusmaksu",IDC_STATIC,33,190,80,8
+    LTEXT           "Seuraava huutokauppapv.",IDC_STATIC,283,17,86,8
+    LTEXT           "Muistutuskirjeraja (€)",IDC_STATIC,327,140,65,8
+    LTEXT           "Muistutuskirjeraja1 pv",IDC_STATIC,327,154,69,8
+    LTEXT           "Ylijäämän ilmoitusmaksu",IDC_STATIC,181,164,76,8
+    LTEXT           "Lainan ylijäämän alaraja mk",IDC_STATIC,182,149,76,8
+    EDITTEXT        IDC_LAINA_AIKA,215,22,39,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOIMISTO,59,18,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KUITTIMAKSU,117,144,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SEURHKPV,374,14,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KORKO1,79,260,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RAJA1,120,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KORKO2,159,260,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RAJA2,195,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KORKO3,232,261,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RAJA3,270,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KORKO4,308,260,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KATUOS,59,32,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PTP,59,47,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PUH,59,61,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FAX,59,75,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KUITIN_KATOAMINEN,117,172,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUISTUTUSKIRJEMAKSU,117,158,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VAKUUSVARMENNUSMAKSU,117,186,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSTITUS,117,200,40,14,ES_AUTOHSCROLL
+    LTEXT           "Säil.-, Hoito- ja Vakuutusm. %/kk",IDC_STATIC,11,215,
+                    104,8
+    EDITTEXT        IDC_SHV_MAKSUPR,117,214,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Lisämaksut (€)",IDC_STATIC,7,133,160,99
+    LTEXT           "Muistutuskirjeraja2 pv",IDC_STATIC,327,167,69,8
+    EDITTEXT        IDC_MUISTKIRJERAJA_MK,434,136,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUISTKIRJE1RAJA_PV,434,150,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MUISTKIRJE2RAJA_PV,434,164,40,14,ES_AUTOHSCROLL
+    LTEXT           "Huutokaupan eräpäiväraja",IDC_STATIC,285,32,85,8
+    EDITTEXT        IDC_HK_ERAPV_RAJA,374,29,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HKMAKSU_PR,373,51,40,14,ES_AUTOHSCROLL
+    LTEXT           "Myynnin valm.maksu min.",IDC_STATIC,289,93,81,8
+    LTEXT           "Arvopap.väl.kust %",IDC_STATIC,308,119,62,8
+    EDITTEXT        IDC_HK_POISTOMAKSU,373,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MY_VALM_MAKSU_PR,373,77,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MY_VALM_MAKSU_MIN,373,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ARVOPAP_VAL_MAKSU_PR,373,114,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOIMENPIDEKIELTORAJA,215,65,40,14,ES_AUTOHSCROLL
+    LTEXT           "Toimenpidekieltoraja pv",IDC_STATIC,178,55,76,8
+    LTEXT           "Ylijäämän tilitysaika pv",IDC_STATIC,183,178,71,8
+    GROUPBOX        "Huutokaupan ylijäämä (€)",IDC_STATIC,175,132,134,62
+    EDITTEXT        IDC_YLIJAAMAN_ALARAJA,263,146,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YLIJAAMAN_ILMOITUSMAKSU,263,160,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YLIJAAMAN_TILITYSAIKA,263,174,40,14,ES_AUTOHSCROLL
+    LTEXT           "€",IDC_STATIC,417,66,8,8
+    LTEXT           "€",IDC_STATIC,418,94,8,8
+    LTEXT           "x kk eteenpäin tapahtumapäivästä",IDC_STATIC,171,38,113,
+                    10
+END
+
+IDD_DLG_TAPAHTUMA DIALOG DISCARDABLE  0, 0, 671, 274
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lainan tapahtumat"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,253,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Sulje",IDCANCEL,614,253,50,14
+    LTEXT           "-",IDC_ASIAKAS_LAINANR,7,7,657,8
+    CONTROL         "Custom1",IDC_EVENTS,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,7,19,657,126
+    PUSHBUTTON      "Button1",IDC_BUTTON1,236,253,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Custom2",IDC_EVENTROWS,"GXWND",WS_BORDER | WS_TABSTOP,7,
+                    151,657,96
+END
+
+IDD_DLG_ARVIOMIES DIALOG DISCARDABLE  0, 0, 233, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Arviomiesten tiedot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,176,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,176,65,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Custom1",IDC_ARVIOMIESRIVIT,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,7,164,72
+    PUSHBUTTON      "Lisää uusi",IDC_UUSI_ARVIOMIESRIVI,7,82,50,14
+    PUSHBUTTON      "Talleta",IDC_TALLETA,121,82,50,14
+    PUSHBUTTON      "Poista",IDC_POISTA,64,82,50,14
+END
+
+IDD_DLG_LOGIN DIALOG DISCARDABLE  0, 0, 118, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_USERID,63,7,48,102,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_KASSA,63,20,48,85,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PW,63,37,48,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,61,58,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,58,50,14
+    LTEXT           "Nimikirjaimet",IDC_STATIC,17,9,40,8
+    LTEXT           "Salasana",IDC_STATIC,23,39,30,8
+    LTEXT           "Kassa",IDC_STATIC,37,22,20,8
+END
+
+IDD_DLG_KASSA DIALOG DISCARDABLE  0, 0, 371, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kassat"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Sulje",IDOK,315,88,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,88,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Custom1",IDC_KASSALISTA,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,7,7,176,73
+    PUSHBUTTON      "Lisää uusi",IDC_LISAA_UUSI_KASSA,7,88,50,14
+    EDITTEXT        IDC_SIIRTOSUMMA,197,33,40,14,ES_AUTOHSCROLL
+    LTEXT           "Siirtosumma",IDC_STATIC,197,20,38,8
+    PUSHBUTTON      "Nosto",IDC_NOSTO,244,20,50,14
+    PUSHBUTTON      "Pano",IDC_PANO,244,35,50,14
+    COMBOBOX        IDC_KASSA1,195,65,48,68,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_KASSA2,295,65,48,66,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Siirto",IDC_SIIRTO,244,65,50,14
+    GROUPBOX        "Kassa=?",IDC_RAHASIIRROT_KASSA,190,2,175,83
+    LTEXT           "Kassasta",IDC_STATIC,199,56,30,8
+    LTEXT           "Kassaan",IDC_STATIC,299,57,28,8
+    LTEXT           "-------->",IDC_STATIC,258,57,21,8
+    PUSHBUTTON      "Talleta",IDC_TALLETA,63,88,50,14
+    LTEXT           "Pankkiin (pk-maksut + pankkiin maksetut)",IDC_STATIC,
+                    299,7,62,26
+    LTEXT           "Pankista",IDC_STATIC,299,38,28,8
+END
+
+IDD_DLG_TUOTE DIALOG DISCARDABLE  0, 0, 365, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tuotteet"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,308,217,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,248,217,50,14
+    CONTROL         "Custom1",IDC_TUOTELISTA2,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,7,112,351,98
+    CONTROL         "Custom1",IDC_TUOTERYHMAT,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,7,18,176,80
+    LTEXT           "Tuoteryhmät",IDC_STATIC,7,7,40,8
+    LTEXT           "Tuotteet",IDC_STATIC,7,102,28,8
+    LTEXT           "€",IDC_STATIC,337,100,8,8
+    LTEXT           "Tuotteiden hinnat euroina !",IDC_STATIC,272,89,86,8
+END
+
+IDD_DLG_KASSATARKASTUS DIALOG DISCARDABLE  0, 0, 240, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kassojen tarkastus"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Peru",IDCANCEL,183,124,50,14
+    PUSHBUTTON      "Vahvista saldo oikeaksi !",IDOK,133,103,100,14
+    LTEXT           "Kassa",IDC_STATIC,19,14,20,8
+    LTEXT           "Arviomies",IDC_STATIC,19,26,31,8
+    LTEXT           "Kassan saldo ed.tarkastuksessa",IDC_STATIC,14,73,102,8
+    LTEXT           "Edellinen tarkastus",IDC_STATIC,13,63,60,8
+    LTEXT           "Aika",IDC_STATIC,19,36,15,8
+    LTEXT           "Saldo (uusia talletettuja tositteita)",IDC_STATIC,13,90,
+                    104,8
+    LTEXT           "-",IDC_KASSA,67,14,100,11,WS_BORDER
+    LTEXT           "-",IDC_ARVIOMIES,67,25,100,11,WS_BORDER
+    LTEXT           "-",IDC_AIKA,67,36,100,11,WS_BORDER
+    LTEXT           "-",IDC_AIKA2,133,60,100,11,WS_BORDER
+    LTEXT           "-",IDC_EDELLINENSALDO,133,71,100,11,WS_BORDER
+    EDITTEXT        IDC_SALDOTOSITTEIDENMUKAAN,134,86,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "",IDC_STATIC,7,2,226,53
+    LTEXT           "Yht.",IDC_STATIC,177,90,14,8
+    EDITTEXT        IDC_YHT,193,87,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Kuittaa ensin pankkikorttimaksut ja maksut pankkiin kassanostoina !",
+                    IDC_STATIC,13,105,110,23
+END
+
+IDD_DLG_KASSARAPORTTI DIALOG DISCARDABLE  0, 0, 479, 417
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kassaraportti"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,421,396,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,353,396,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Custom1",IDC_GRID_KASSARAPORTTI,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,25,464,279
+    LTEXT           "Raporttipäivä",IDC_STATIC,321,12,43,8
+    EDITTEXT        IDC_RAP_PVM,367,6,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Etsi",IDC_ETSI,421,6,50,14
+    LTEXT           "-",IDC_PVKSTART,157,15,151,8
+    LTEXT           "-",IDC_PVKSTOP,156,6,151,8
+    PUSHBUTTON      "Päiväkirja-ajo",IDC_PAIVAKIRJA,247,396,50,14
+    LTEXT           "Kassatilanteen tarkastus ja kassapäiväkirjat",
+                    IDC_STATIC,7,6,146,11
+    LTEXT           "-",IDC_LAINAKANTA,359,381,106,12
+    PUSHBUTTON      "KP-raportti",IDC_KP_RAPORTTI,299,396,50,14
+    EDITTEXT        IDC_SIIRTOSUMMA,15,355,40,14,ES_AUTOHSCROLL
+    LTEXT           "Siirtosumma",IDC_STATIC,15,344,38,8
+    PUSHBUTTON      "Pano pankkiin",IDC_NOSTO,62,344,56,14
+    PUSHBUTTON      "Nosto pankista",IDC_PANO,62,360,57,14
+    PUSHBUTTON      "Siirto",IDC_SIIRTO,55,388,50,14
+    LTEXT           "Kassasta",IDC_STATIC,11,377,30,8
+    LTEXT           "Kassaan",IDC_STATIC,111,380,28,8
+    LTEXT           "-------->",IDC_STATIC,69,380,21,8
+    LTEXT           "Pankkikortit, pankkiin maksetut lainamaksut, käteisvienti pankkiin",
+                    IDC_STATIC,122,344,159,16
+    LTEXT           "Pankkiin maksettu uusi laina, käteistuonti pankista",
+                    IDC_STATIC,122,363,159,8
+    PUSHBUTTON      "Saldo OK",IDSALDO_OK,400,353,40,14
+    LTEXT           "Yht.",IDC_STATIC,385,340,14,8
+    LTEXT           "Static",IDC_KASSA,205,306,61,8
+    COMBOBOX        IDC_KASSA1,7,388,48,59,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_KASSA2,106,388,48,59,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,7,315,464,62
+    RTEXT           "Static",IDC_YHT,400,335,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "€",IDC_STATIC,444,338,8,8
+    PUSHBUTTON      "Lainakanta",IDC_BTN_LAINAKANTA,301,380,50,14
+    PUSHBUTTON      "Siirtosaatavat",IDC_SIIRTOSAATAVAT,247,380,50,14
+    PUSHBUTTON      "Peru",IDC_UNDO,171,325,50,14
+    EDITTEXT        IDC_VISASIIRTO,17,323,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Visa",IDC_VISA,63,324,55,14
+    LTEXT           "Peruu aina viimeisimmän pankki tai visa summan",
+                    IDC_STATIC,225,324,110,18
+END
+
+IDD_DLG_AUCTION DIALOG DISCARDABLE  0, 0, 504, 345
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Huutokauppa"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_ETSI,397,7,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Etsi",IDC_BTN_ETSI,443,7,50,14
+    DEFPUSHBUTTON   "Sulje",IDOK,462,319,30,14
+    COMBOBOX        IDC_HUUTOKAUPPAN_VALINTA,307,7,76,260,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Palauta laina",IDC_PALAUTA_BTN,364,28,50,14
+    PUSHBUTTON      "Talleta listat",IDC_HKLISTA_BTN,400,319,50,14
+    PUSHBUTTON      "Kuvaukset",IDC_KUVAUKSET_BTN,343,319,50,14
+    PUSHBUTTON      "Loppuraportit",IDC_BTN_RAPORTTI,281,319,50,14
+    CONTROL         "Custom1",IDC_HK_LAINA,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,7,46,490,174
+    CONTROL         "Custom2",IDC_HK_LAINARIVIT,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,228,490,71
+    PUSHBUTTON      "Cancel",IDCANCEL,0,18,12,8,NOT WS_VISIBLE
+    LTEXT           "Lainanumero",IDC_LAINANUMERO_LABEL,7,7,250,8
+    LTEXT           "-",IDC_STATIC_TXT_TALLETUS_IND,194,28,63,8
+    LTEXT           "Korjatut tiedot (LNimi, Pohjah., Myyntih. ja Huom) talletetaan Enter-näpp. tai siirtymällä eri riville",
+                    IDC_OHJE,7,304,147,25
+    LTEXT           "Palautus mahdollista vain jos koko laina on myymättä !",
+                    IDC_STATIC,260,26,94,17
+    LTEXT           "Huutokauppa",IDC_STATIC,261,7,44,8
+END
+
+IDD_DLG_HKRAPORTTI DIALOG DISCARDABLE  0, 0, 310, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Huutokaupan tilastoraportti ja päätös"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,253,151,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,253,7,50,14,NOT WS_VISIBLE
+    LTEXT           "Lainoja yht",IDC_STATIC,14,15,35,8
+    LTEXT           "Lainoja yht",IDC_STATIC,14,27,35,8
+    LTEXT           "Korot ja kulut yht",IDC_STATIC,13,63,54,8
+    LTEXT           "HK-kulut yht",IDC_STATIC,13,75,40,8
+    LTEXT           "Huudot yht",IDC_STATIC,13,87,36,8
+    LTEXT           "Ylijäämät yht (kokonaan myydyistä)",IDC_STATIC,13,99,
+                    110,8
+    LTEXT           "Alijäämät yht (kokonaan myydyistä)",IDC_STATIC,13,111,
+                    110,8
+    LTEXT           "Osaksi myydyt yht",IDC_STATIC,13,150,57,8
+    LTEXT           "Osaksi myytyjen lainasumma yht",IDC_STATIC,13,161,101,8
+    LTEXT           "Josta myyty yht",IDC_STATIC,13,185,48,8
+    LTEXT           "€",IDC_STATIC,167,27,8,8
+    LTEXT           "€",IDC_STATIC,167,63,8,8
+    LTEXT           "€",IDC_STATIC,167,75,8,8
+    LTEXT           "€",IDC_STATIC,167,87,8,8
+    LTEXT           "€",IDC_STATIC,167,99,8,8
+    LTEXT           "€",IDC_STATIC,167,111,8,8
+    LTEXT           "€",IDC_STATIC,167,161,8,8
+    LTEXT           "€",IDC_STATIC,167,185,8,8
+    LTEXT           "kpl",IDC_STATIC,167,15,10,8
+    LTEXT           "kpl",IDC_STATIC,165,150,10,8
+    CTEXT           "-",IDC_LOANS_IN_AUCTION,124,15,40,10
+    RTEXT           "-",IDC_LOANS_IN_AUCTION_SUM,124,27,40,10
+    RTEXT           "-",IDC_INTERESTS_AND_EXPENSES,123,63,40,10
+    RTEXT           "-",IDC_AUCTION_EXPENSES,123,75,40,10
+    RTEXT           "-",IDC_AUCTION_BIDS,123,87,40,10
+    RTEXT           "-",IDC_BALANCE,123,99,40,10
+    RTEXT           "-",IDC_DEFICIT,123,111,40,10
+    CTEXT           "-",IDC_LOAN_PARTIALLY_SOLD_NUMBER,123,150,40,10
+    RTEXT           "-",IDC_PARTIALLY_SOLD_TOTAL_LOAN,123,161,40,10
+    RTEXT           "-",IDC_PARTIALLY_SOLD_SUM,123,185,40,10
+    GROUPBOX        "Osaksi myytyt lainat edellisen hk:n jälkeen",IDC_STATIC,
+                    7,173,187,28
+    GROUPBOX        "Huutokaupassa olevat lainat",IDC_STATIC,7,4,187,125
+    PUSHBUTTON      "HK-lainat /Päätös",IDC_RAPORTTI,213,117,90,14
+    LTEXT           "Kokonaan myytyjä ",IDC_STATIC,13,40,60,8
+    LTEXT           "Myynti yhteensä (kok +osa)",IDC_STATIC,13,52,87,8
+    LTEXT           "€",IDC_STATIC,167,52,8,8
+    LTEXT           "kpl",IDC_STATIC,165,40,10,8
+    RTEXT           "-",IDC_SOLDLOANS_AMOUNT,122,40,40,10
+    RTEXT           "-",IDC_SOLDLOANS_SUM,122,52,40,10
+END
+
+IDD_DLG_YJ_MAKSU DIALOG DISCARDABLE  0, 0, 349, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ylijäämän maksu asiakkaalle"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Sulje",IDOK,308,111,34,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,177,112,18,13,NOT WS_VISIBLE | NOT 
+                    WS_TABSTOP
+    CONTROL         "Custom1",IDC_YJKIRJEEN_LAINAT,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,10,40,332,60
+    LTEXT           "KirjeNr",IDC_STATIC,7,13,22,8
+    LTEXT           "HenkTun",IDC_STATIC,7,24,31,8
+    COMBOBOX        IDC_KIRJENR,40,10,70,120,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_HENKTUN,40,23,70,107,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Sulje",IDC_SULJE,163,111,12,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "Etsi",IDC_ETSI,111,10,42,13
+    LTEXT           "-",IDC_VALITTU_LAINA,21,102,106,8
+    PUSHBUTTON      "Kuitti",IDC_KUITTI,224,111,34,14
+END
+
+IDD_DLG_AJ_KUITTAUS DIALOG DISCARDABLE  0, 0, 186, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vapaaehtoinen alijäämän suoritus"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Sulje",IDOK,130,102,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,0,100,10,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Asiakastunnus:",IDC_STATIC,7,16,49,8
+    LTEXT           "",IDC_CUSTID,60,16,119,8
+    LTEXT           "Nimi",IDC_STATIC,7,26,14,8
+    LTEXT           "",IDC_CUSTNAME,59,26,120,8
+    LTEXT           "",IDC_PERSONID,59,34,120,8
+    LTEXT           "Htun",IDC_STATIC,7,34,16,8
+    LTEXT           "Asiakkaan maksamat alijäämät €",IDC_STATIC,7,51,104,8
+    LTEXT           "Asiakkaalle maksetut ylijäämät €",IDC_STATIC,7,61,102,8
+    LTEXT           "",IDC_DEFICIT,125,52,54,8
+    LTEXT           "",IDC_BALANCE,125,62,54,8
+    LTEXT           "Suoritus €",IDC_STATIC,7,79,32,8
+    EDITTEXT        IDC_PAYMENT,48,76,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Kuitti",IDC_ACCEPT,130,87,50,14
+END
+
+IDD_DLG_YJ_KUITTAUS DIALOG DISCARDABLE  0, 0, 254, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Vanhentuneiden ylijäämien kuittaus"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Sulje",IDOK,197,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,140,16,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Ylijäämän tilitysaika asetustiedoissa (yleensä 1vuosi=365 vrk)",
+                    IDC_STATIC,7,28,192,8
+    LTEXT           "",IDC_YLIJ_TILITYSAIKA_ASTIED,205,28,27,10,SS_SUNKEN
+    LTEXT           "vrk",IDC_STATIC,236,30,11,8
+    LTEXT           "Kokonaan myytyjä lainoja, joiden ylijäämää ei ole maksettu",
+                    IDC_STATIC,7,7,183,8
+    LTEXT           "Lainoista ne, joiden huutokaupasta (Ei myyntipv!) on",
+                    IDC_STATIC,7,45,164,8
+    LTEXT           "enemmän aikaa kuin yo. tilitysaika",IDC_STATIC,86,52,
+                    108,8
+    LTEXT           "",IDC_OLD_LOANS,205,49,27,10,SS_SUNKEN
+    LTEXT           "kpl",IDC_STATIC,237,52,10,8
+    LTEXT           "asiakkaalle tai kuitattu lainaamolle huutokaupassa.",
+                    IDC_STATIC,7,15,160,8
+    LTEXT           "Näistä lainoista ylijäämää yhteensä",IDC_STATIC,7,70,
+                    110,8
+    LTEXT           "",IDC_YLIJMK,186,71,47,10,SS_SUNKEN
+    LTEXT           "€",IDC_STATIC,239,71,8,8
+    LTEXT           "Kuitattaessa ylijäämäsumma lainaamolle merkitään lainatiedot siten, että niitä ei enää käsitellä tässä tilastossa eikä asiakkaalle voi enää tilittää näitä ylijäämiä.",
+                    IDC_STATIC,7,88,240,25
+    PUSHBUTTON      "Raportti + kuittaus",IDC_KUITTI,110,140,75,14
+    LTEXT           "Vaikka asetustiedoissa voidaan muuttaa tilitysaikaa, sen tulisi olla 365 vrk kuittausta tehtäessä.",
+                    IDC_STATIC,7,118,240,17
+END
+
+IDD_DLG_HALTIJAN_MUUTOS DIALOG DISCARDABLE  0, 0, 262, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lainan siirto toiselle asiakkaalle"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Sulje",IDOK,200,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,5,80,14,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Valittu laina nr",IDC_STATIC,25,10,45,8
+    LTEXT           "",IDC_LANR,85,10,32,11,SS_SUNKEN
+    LTEXT           "Asiakkaan nimi",IDC_STATIC,20,25,50,8
+    LTEXT           "",IDC_ASNIMI,85,25,160,8
+    LTEXT           "Henkilötunnus",IDC_STATIC,20,35,46,8
+    LTEXT           "",IDC_HTUN1,85,35,160,8
+    LTEXT           "Uuden asiakkaan henkilötunnus",IDC_STATIC,5,56,103,8
+    EDITTEXT        IDC_HTUN2,115,54,75,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Siirto",IDC_MOVE,200,55,50,14
+    LTEXT           "Huom! Kirjoita henkilötunnus väliviivan kanssa.",
+                    IDC_STATIC,29,77,156,11
+    LTEXT           "Muodossa: ppkkvv-nnnn",IDC_STATIC,52,86,80,8
+END
+
+IDD_DLG_LAINAKULUT DIALOG DISCARDABLE  0, 0, 596, 423
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Lainakulut valitulle lainalle"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LAINAN_LUNUUD_PV,470,54,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Laske",IDC_BTN_LASKE,540,55,42,12
+    DEFPUSHBUTTON   "OK",IDOK,469,332,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,407,332,50,14,NOT WS_VISIBLE
+    CONTROL         "Custom2",IDC_INTERESTGRID,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,7,0,370,421
+    LTEXT           "",IDC_NIMI_HTUN,408,6,181,8
+    LTEXT           "Lainan päiväys",IDC_STATIC,408,33,48,8
+    LTEXT           "Eräpäivä",IDC_STATIC,408,44,29,8
+    LTEXT           "Lun/uud/..pv",IDC_STATIC,408,55,44,8
+    LTEXT           "Lainasumma",IDC_STATIC,408,86,40,8
+    LTEXT           "Korko%/kk",IDC_STATIC,408,95,36,8
+    LTEXT           "SHV-maksu-%/kk",IDC_STATIC,407,106,57,8
+    EDITTEXT        IDC_LAINASUMMA,470,82,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_KORKOPRKK,470,95,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SHVMAKSUKORKOPRKK,470,106,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_LAINAN_PV,470,30,50,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_LAINAN_ERAPV,470,42,50,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "€",IDC_STATIC,523,86,8,8
+    LTEXT           "Sininen: Kuukausikorkoperusteinen lask.",IDC_STATIC,399,
+                    376,152,8
+    LTEXT           "Keltainen: Päiväkorkolaskenta",IDC_STATIC,399,387,152,8
+    LTEXT           "Lunastettaessa:",IDC_STATIC,404,220,51,8
+    LTEXT           "Ylimääräinen SäilMaksu",IDC_STATIC,379,236,83,8
+    LTEXT           "-",IDC_KULUT_LUNYHT,465,218,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "-",IDC_KULUT_UUDYHT,465,197,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Maksumuistutus1",IDC_STATIC,405,130,56,8
+    LTEXT           "Maksumuistutus2",IDC_STATIC,405,142,56,8
+    LTEXT           "-",IDC_MUISTUTUS1,469,130,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "-",IDC_MUISTUTUS2,469,143,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "-",IDC_YLIMSAILMAKSU,464,236,50,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "Uudistettaessa:",IDC_STATIC,405,199,50,8
+    CTEXT           "Maksettava",IDC_STATIC,418,174,48,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER
+    LTEXT           "Lisää ylim.säilytysmaksu",IDC_STATIC,519,218,60,30
+    LTEXT           "sis ylim. säilytysmaksun",IDC_STATIC,523,193,58,16
+END
+
+IDD_DLG_KASSALOKI DIALOG DISCARDABLE  0, 0, 614, 364
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kassaloki"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,557,6,50,14
+    COMBOBOX        IDC_KASSA,36,6,72,67,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PVM,159,6,55,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Hae lista",IDC_HAE,219,6,50,14
+    CONTROL         "DeskLogRows",IDC_DESKLOGROWS,"GXWND",WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL,7,25,600,332
+    PUSHBUTTON      "Cancel",IDCANCEL,428,6,50,14,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "Kassa",IDC_STATIC,7,6,20,8
+    LTEXT           "Päivä",IDC_STATIC,129,6,19,8
+END
+
+IDD_DLG_HAKULISTA DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hakulista"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Hakulista",IDOK,129,7,50,14
+    PUSHBUTTON      "Sulje",IDCANCEL,129,24,50,14
+    LTEXT           "",IDC_INFO1,7,7,115,27
+    LTEXT           "Static",IDC_HL_INFO,7,42,172,41
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DLG_ENSIM_LNR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_DLG_UUSI_LAINA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 492
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 265
+    END
+
+    IDD_DLG_LUNASTUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 442
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_DLG_UUDISTUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 451
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 325
+    END
+
+    IDD_DLG_VAKMUUTOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 578
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 336
+    END
+
+    IDD_DLG_ASETUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 474
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 307
+    END
+
+    IDD_DLG_TAPAHTUMA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 664
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+
+    IDD_DLG_ARVIOMIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_DLG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DLG_KASSA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DLG_TUOTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_DLG_KASSATARKASTUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DLG_KASSARAPORTTI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 471
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 410
+    END
+
+    IDD_DLG_AUCTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 497
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_DLG_HKRAPORTTI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DLG_YJ_MAKSU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_DLG_AJ_KUITTAUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_DLG_YJ_KUITTAUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DLG_HALTIJAN_MUUTOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DLG_LAINAKULUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 589
+    END
+
+    IDD_DLG_KASSALOKI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 607
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 357
+    END
+
+    IDD_DLG_HAKULISTA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""gxresrc.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Pantti.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "#include ""gxres.rc""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_PANTTI              REGISTRY DISCARDABLE    "Pantti.rgs"
+#endif    // Finnish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Pantti.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+#include "gxres.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
