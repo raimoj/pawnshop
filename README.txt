@@ -1,9 +1,14 @@
 PawnShop application  
 
 
+Resources:
+https://github.com/raimoj/pawnshop/wiki/Kani-pawnshop-wiki
+http://raimoj-mylly.homelinux.com/pawnshop/index.html
+http://raimoj.com/Panttiohjelmisto/index.htm
+
 Background and History
 
-During the the years 1998-2002, about 14 years ago, I developed a new information system for the local pawnshop: Oulun Panttilainakonttori http://www.oulunpantti.net/
+Years ago this PawnShop-application was developed for the local pawnshop: Oulun Panttilainakonttori http://www.oulunpantti.net/
 
 
 The main motivation for doing this as a hobby during my free time was the fact that my wife was working for the shop at that time. I couldn't stand the old Cobol/text-file-monster and the millenium problems was ahead. In addition the company was paying one employees worth of money monthly basis for maintenance and support for the old system.
