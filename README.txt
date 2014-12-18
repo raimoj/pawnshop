@@ -36,5 +36,4 @@ Let's see if someone can find this project useful. It might be difficult because
 
 br,
   raimo
-
-todo: open source license description
+  
