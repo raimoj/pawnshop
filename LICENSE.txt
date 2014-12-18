@@ -6,7 +6,9 @@ Copyright (c) 2014, Raimo Jormalainen (raimoj.com)
 -----------------
 disclaimer:
 The first version of this application uses a proprietary commercial user interface component -  
-Stingray Objective Grid - UI-grid-component which is not included in this Open Source publication.  This component will be replaced with an open version.  After this change this disclaimer will be removed from this license.
+Stingray Objective Grid - UI-grid-component which is not included in this Open Source publication.  
+This component will be replaced with an open version.  
+After this change this disclaimer will be removed from this license.
 -----------------
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
