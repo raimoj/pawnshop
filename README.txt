@@ -1,21 +1,17 @@
 PawnShop application  
 
-
 Resources:
 https://github.com/raimoj/pawnshop/wiki/Kani-pawnshop-wiki
-http://raimoj-mylly.homelinux.com/pawnshop/index.html
 http://raimoj.com/Panttiohjelmisto/index.htm
 
 Background and History
 
 Years ago this PawnShop-application was developed for the local pawnshop: Oulun Panttilainakonttori http://www.oulunpantti.net/
+Nowadays several newer versions has been developed. This source code in Github serves as a backup for an old version.
 
+This old version has been written with tools available 15 years ago. This means WindowsNT, ODBC, Redhat-Linux, Sybase SQLserver, C++6.0 VisualStudio and so on. The current production version has been ported in Windows-10 / MySQL.
 
-The main motivation for doing this as a hobby during my free time was the fact that my wife was working for the shop at that time. I couldn't stand the old Cobol/text-file-monster and the millenium problems was ahead. In addition the company was paying one employees worth of money monthly basis for maintenance and support for the old system.
-
-I have to apologize the shortcomings both in documentation and source code. I'm aware many of problems of this project. But this has been written with tools available 15 years ago. This means WindowsNT, ODBC, Redhat-Linux, Sybase SQLserver, C++6.0 VisualStudio and so on.
-
-In spite of the old programming tools and inadequate skills, the application has been in everyday use and there has not been any bugfixes during the years. I'm proud of the project. It handles 20000 customers information - loans, redemptions, renewals, auction and so on.
+The application has been in everyday use and there has not been any bugfixes during the years. I'm proud of the project. It handles 30000 customers information - loans, redemptions, renewals, auction and so on.
 
 The reason I publish this project as an Open Source is, that I have to develope this a step further. And the first thing is to port the project to use new tools. All of the components - except one - in this project are Open Source from this time on. The only part that cannot be published yet - as far as I know - is an UI-grid-component called Stingray Objective Grid. This is a sub-library used to display information as a table format. 
 Porting the application into new tools this grid-component can also be implemented with OS-tools.
